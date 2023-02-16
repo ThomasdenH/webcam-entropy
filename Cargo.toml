@@ -1,0 +1,19 @@
+[package]
+name = "webcam-entropy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sha3 = "0.10.6"
+warp = "0.3"
+image = "0.24"
+
+[dependencies.tokio]
+version = "1"
+features = ["time", "rt", "macros", "rt-multi-thread"]
+
+[dependencies.nokhwa]
+version = "0.10.3"
+features = ["input-native"]
